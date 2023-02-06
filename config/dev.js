@@ -1,6 +1,7 @@
 module.exports = {
-    POOL_USER: 'soszqcfwpxpvwx',
-    POOL_HOST: 'ec2-107-20-155-148.compute-1.amazonaws.com',
-    POOL_DATABASE: 'd55f9kvdh3negi',
-    POOL_PASSWORD: 'a9823012b9458a7da8902055d327ce12b6201343a5818913b6542a6bcddc945a'
+    POOL_USER: 'bgustavo81',
+    // POOL_HOST: 'postgres://bgustavo81:qGzEBsR8PVmM2t5AD0RHZGR7PhFs5AGa@dpg-cfgi63g2i3mg6pdcb550-a.oregon-postgres.render.com/app_database_wn5h',
+    POOL_HOST: 'dpg-cfgldd02i3mg6pdvi950-a.ohio-postgres.render.com',
+    POOL_DATABASE: 'app_database_dgmg',
+    POOL_PASSWORD: 'bjUdCcPFjUGpXSaV9a9x9MhUvSP4c1qE'
 };

@@ -14,7 +14,6 @@ class PostShow extends Component {
     
     render() {
         const post = this.props.posts
-        console.log(post);
         if (!this.props.posts) {
             return (
                 <div className="PostShowContainer">

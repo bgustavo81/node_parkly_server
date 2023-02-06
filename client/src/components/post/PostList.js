@@ -14,7 +14,7 @@ class PostList extends Component {
     
 
     renderAdmin(posts) {
-        if (posts.userid === this.props.currentUserId) {
+        if (posts.user_id === this.props.currentUserId) {
             return (
                 <div>
                     <Link to={`/post/edit/${posts.id}`} style={{ textDecoration: 'none' }}>
@@ -96,7 +96,6 @@ class PostList extends Component {
 }
 
 const mapStateToProps = (state) => {
-    // console.log(Object.values(state.posts));
     return { 
         posts: Object.values(state.posts).reverse(),
         currentUserId: state.auth.userId,

@@ -12,7 +12,7 @@ h2.ParkShowTitle {
 }
 
 .ParkShowImage {
-    background-image: url('/images/GrandTeton.jpg');
+    background-image: url('../../public/images/GrandTeton.jpg');
     background-color: #f4f4f4;
     height: 720px;
     max-width: 1200px;

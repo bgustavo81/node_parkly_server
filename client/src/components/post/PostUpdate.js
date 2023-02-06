@@ -28,7 +28,6 @@ class PostUpdate extends React.Component {
             )
         }
         let items = _.pick(posts, 'title', 'content');
-        // console.log(items);
         return (
         <div>
             <h3 className="PostFormTitle">Edit your post</h3>

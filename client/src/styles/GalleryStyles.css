@@ -23,47 +23,47 @@
 }
 
 .Arches { 
-    background-image: url("/images/Arches.jpg");
+    background-image: url("../../public/images/Arches.jpg");
     height: 420px;
 }
 
 .GrandTeton {
-    background-image: url("/images/GrandTeton.jpg");
+    background-image: url("../../public/images/GrandTeton.jpg");
     height: 420px;
 }
 
 .Zion {
-    background-image: url("/images/Zion.jpg");
+    background-image: url("../../public/images/Zion.jpg");
     height: 928px;
 }
 
 .Acadia {
-    background-image: url("/images/Acadia.jpg");
+    background-image: url("../../public/images/Acadia.jpg");
     height: 420px;
 }
 
 .Glacier {
-    background-image: url("/images/Glacier.jpg");
+    background-image: url("../../public/images/Glacier.jpg");
     height: 420px;
 }
 
 .Yosemite {
-    background-image: url("/images/yosemite.jpg");
+    background-image: url("../../public/images/yosemite.jpg");
     height: 420px;
 }
 
 .Rocky {
-    background-image: url("/images/Rocky.jpg");
+    background-image: url("../../public/images/Rocky.jpg");
     height: 420px;
 }
 
 .Yellowstone {
-    background-image: url("/images/Yellowstone.jpg");
+    background-image: url("../../public/images/Yellowstone.jpg");
     height: 420px;
 }
 
 .Capitol {
-    background-image: url("/images/Capitol.jpg");
+    background-image: url("../../public/images/Capitol.jpg");
     height: 420px;
 }
 

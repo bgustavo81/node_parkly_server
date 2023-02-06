@@ -26,8 +26,7 @@ export const signOut = () => {
 
 export const createPost = (formValues) => async (dispatch, getState) => {
     const { userId } = getState().auth;
-    const response = await axios.post('/posts', { ...formValues, userId });
-    // console.log(response.data);
+    const response = await axios.post('http://localhost:5000/posts', { ...formValues, userId });
     
 
     dispatch({ type: CREATE_POST, payload: response.data });
@@ -35,30 +34,27 @@ export const createPost = (formValues) => async (dispatch, getState) => {
 }
 
 export const fetchPosts = () => async dispatch => {
-    const response = await axios.get('/posts');
+    const response = await axios.get('http://localhost:5000/posts');
 
     dispatch({ type: FETCH_POSTS, payload: response.data.posts });
-    // console.log(response.data);
 
 }
 
 export const fetchPost = (id) => async dispatch => {
-    const response = await axios.get(`/post/${id}`);
-    // console.log(response.data.post[0]);
+    const response = await axios.get(`http://localhost:5000/post/${id}`);
 
     dispatch({ type: FETCH_POST, payload: response.data.post[0]});
 };
 
 export const editPost = (id, formValues) => async dispatch => {
-    const response = await axios.patch(`/posts/${id}`, formValues);
-    // console.log(response);
+    const response = await axios.patch(`http://localhost:5000/posts/${id}`, formValues);
 
     dispatch({ type: UPDATE_POST, payload: response.data});
     history.push('/posts');
 }
 
 export const deletePost = (id) => async dispatch => {
-    await axios.delete(`/posts/${id}`);
+    await axios.delete(`http://localhost:5000/posts/${id}`);
 
     dispatch({type: DELETE_POST, payload: id});
     history.push('/posts');

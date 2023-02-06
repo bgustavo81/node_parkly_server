@@ -30,7 +30,7 @@
 }
 
 .PostListCardImage {
-    background-image: url('/images/yosemite.jpg');
+    background-image: url('../../public/images/yosemite.jpg');
     background-color: #f4f4f4;
     height: 360px;
     background-position: center;

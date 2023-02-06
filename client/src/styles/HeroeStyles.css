@@ -1,7 +1,7 @@
 .HeroeContainer {
     height: 1080px;
     width: 100%;
-    background-image: url('/images/mountain.jpg');
+    background-image: url('../../public/images/mountain.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

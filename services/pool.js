@@ -9,10 +9,9 @@ const pool = new Pool({
     ssl: true
 });
 
-// pool.connect()
-//     .then(() => console.log("Connected successfully"))
-//     .then(() => pool.query("SELECT * FROM posts;"))
-//     .then(() => console.table(results.rows))
-//     .catch((e) => console.log())
+pool.connect()
+    .then(() => console.log("Connected successfully"))
+    .catch((e) => console.log())
+
 
 module.exports = pool;

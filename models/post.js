@@ -10,34 +10,34 @@ module.exports = class Post {
 
     static getPosts() {
         return pool.query(
-            'SELECT * FROM posts ORDER BY id DESC'
+            'SELECT * FROM parkly_posts ORDER BY id DESC'
         );
     };
 
     static getPostById(id) {
         return pool.query(
-            'SELECT * FROM posts WHERE id = $1', 
+            'SELECT * FROM parkly_posts WHERE id = $1', 
             [id]
         );
     };
 
     createPost() {
         return pool.query(
-            'INSERT INTO posts (title, content, userid) VALUES ($1, $2, $3)',
+            'INSERT INTO parkly_posts (title, content, user_id) VALUES ($1, $2, $3)',
             [this.title, this.content, this.userId]
         )
     }
 
     static updatePost(title, content, id) {
         return pool.query(
-            'UPDATE posts SET title = $1, content = $2 WHERE id = $3',
+            'UPDATE parkly_posts SET title = $1, content = $2 WHERE id = $3',
             [title, content, id]
         )
     }
 
     static deletePost(id) {
         return pool.query(
-            'DELETE FROM posts WHERE id = $1', 
+            'DELETE FROM parkly_posts WHERE id = $1', 
             [id]
         )
     }

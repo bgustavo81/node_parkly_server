@@ -8,7 +8,6 @@ exports.getPost = async (req, res, next) => {
             message: `post ${id} was retrieved`,
             post: result.rows
         })
-        console.log(status);
     } catch (err) {
         if (!err.statusCode) {
             err.statusCode = 500;

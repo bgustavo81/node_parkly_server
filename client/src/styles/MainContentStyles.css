@@ -23,7 +23,7 @@ h3 {
 }
 
 .yosemite {
-    background-image: url('/images/yosemite.jpg');
+    background-image: url('../../public/images/yosemite.jpg');
     color: #f4f4f4;
     height: 640px;
     background-position: center;
@@ -33,7 +33,7 @@ h3 {
 }
 
 .rockBridge {
-    background-image: url('/images/rock-bridge.jpg');
+    background-image: url('../../public/images/rock-bridge.jpg');
     color: #f4f4f4;
     height: 640px;
     background-position: center;
