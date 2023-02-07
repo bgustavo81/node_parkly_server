@@ -26,7 +26,7 @@ export const signOut = () => {
 
 export const createPost = (formValues) => async (dispatch, getState) => {
     const { userId } = getState().auth;
-    const response = await axios.post('http://localhost:5000/posts', { ...formValues, userId });
+    const response = await axios.post('https://parkly-server.onrender.com', { ...formValues, userId });
     
 
     dispatch({ type: CREATE_POST, payload: response.data });
@@ -34,27 +34,27 @@ export const createPost = (formValues) => async (dispatch, getState) => {
 }
 
 export const fetchPosts = () => async dispatch => {
-    const response = await axios.get('http://localhost:5000/posts');
+    const response = await axios.get('https://parkly-server.onrender.com');
 
     dispatch({ type: FETCH_POSTS, payload: response.data.posts });
 
 }
 
 export const fetchPost = (id) => async dispatch => {
-    const response = await axios.get(`http://localhost:5000/post/${id}`);
+    const response = await axios.get(`https://parkly-server.onrender.com/${id}`);
 
     dispatch({ type: FETCH_POST, payload: response.data.post[0]});
 };
 
 export const editPost = (id, formValues) => async dispatch => {
-    const response = await axios.patch(`http://localhost:5000/posts/${id}`, formValues);
+    const response = await axios.patch(`https://parkly-server.onrender.com/${id}`, formValues);
 
     dispatch({ type: UPDATE_POST, payload: response.data});
     history.push('/posts');
 }
 
 export const deletePost = (id) => async dispatch => {
-    await axios.delete(`http://localhost:5000/posts/${id}`);
+    await axios.delete(`https://parkly-server.onrender.com/${id}`);
 
     dispatch({type: DELETE_POST, payload: id});
     history.push('/posts');
